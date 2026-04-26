@@ -1,9 +1,11 @@
 package com.draco_dr.api_auth.features.permission.domain;
+
 import com.draco_dr.api_auth.core.common.domain.DomainEntity;
 import com.draco_dr.api_auth.core.common.utils.SlugUtils;
+
 import java.time.LocalDateTime;
-import java.util.UUID;
 import java.util.Objects;
+import java.util.UUID;
 
 public class Permission implements DomainEntity {
 

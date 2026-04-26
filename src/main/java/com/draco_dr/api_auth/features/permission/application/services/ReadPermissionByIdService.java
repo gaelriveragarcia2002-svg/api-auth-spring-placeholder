@@ -1,6 +1,5 @@
 package com.draco_dr.api_auth.features.permission.application.services;
 
-import com.draco_dr.api_auth.features.permission.application.dto.request.ReadPermissionByIdRequest;
 import com.draco_dr.api_auth.features.permission.application.dto.response.PermissionResponse;
 import com.draco_dr.api_auth.features.permission.application.mapper.PermissionDtoMapper;
 import com.draco_dr.api_auth.features.permission.application.ports.in.ReadPermissionByIdUseCase;
