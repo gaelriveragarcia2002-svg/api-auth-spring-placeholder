@@ -17,6 +17,14 @@ public class PermissionEntityMapper {
                 .build();
     }
 
+    public PermissionEntity toNewEntity(Permission permission) {
+        return PermissionEntity.builder()
+                .name(permission.getName())
+                .slug(permission.getSlug())
+                .description(permission.getDescription())
+                .build();
+    }
+
     public Permission toDomain(PermissionEntity entity) {
         return Permission.reconstitute(
                 entity.getId(),

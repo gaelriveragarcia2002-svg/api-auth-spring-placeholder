@@ -38,7 +38,7 @@ public class JpaPermissionRepositoryAdapter implements PermissionRepositoryPort 
     @Override
     public Permission save(Permission v) {
         return permissionEntityMapper.toDomain(
-                permissionJpaRepository.save(permissionEntityMapper.toEntity(v))
+                permissionJpaRepository.save(permissionEntityMapper.toNewEntity(v))
         );
     }
 

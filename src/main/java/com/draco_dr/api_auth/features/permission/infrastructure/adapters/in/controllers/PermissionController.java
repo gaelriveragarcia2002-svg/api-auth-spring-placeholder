@@ -1,5 +1,4 @@
 package com.draco_dr.api_auth.features.permission.infrastructure.adapters.in.controllers;
-
 import com.draco_dr.api_auth.core.common.infrastructure.dto.ApiResponse;
 import com.draco_dr.api_auth.core.common.infrastructure.dto.PagedData;
 import com.draco_dr.api_auth.features.permission.application.dto.request.CreatePermissionRequest;
@@ -11,7 +10,6 @@ import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 import java.util.Map;
 import java.util.UUID;
@@ -27,7 +25,7 @@ public class PermissionController {
     private final ReadPermissionsPaginatedUseCase readPermissionsPaginatedUseCase;
     private final ReadPermissionByIdUseCase readPermissionByIdUseCase;
     private final UpdatePermissionUseCase updatePermissionUseCase;
-    private final  DeletePermissionUseCase deletePermissionUseCase;
+    private final DeletePermissionUseCase deletePermissionUseCase;
 
     // * Constanes del servicio.
     private static final String plural_label = "permisos";
